@@ -1,4 +1,12 @@
-<input
-type="time"
-class="form-control"
-[(ngModel)]="time">
+
+<input class="form-control" type="time" [value]="date | date: 'H:mm'" [(ngModel)]="startTime">
+
+<input class="form-control" type="time" [value]="date | date: 'H:mm'" [(ngModel)]="endTime">
+
+
+
+<h2>Hello {{name}}</h2>
+<h3>{{ today | date: 'H:mm'}}</h3>
+<p>{{startTime}} - {{endTime}}</p>
+<h2>{{startTime - endTime}}</h2>
+<h1>{{date | date: 'dd-MM-y'}}</h1>
